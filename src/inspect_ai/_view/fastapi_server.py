@@ -210,7 +210,10 @@ def view_server_app(
     ) -> Response:
         base_dir = log_dir if log_dir else default_dir
         if sub_dir:
-            eval_set_dir = base_dir + "/" + sub_dir.lstrip("/")
+            if base_dir:
+                eval_set_dir = base_dir + "/" + sub_dir.lstrip("/")
+            else:
+                eval_set_dir = sub_dir.lstrip("/")
         else:
             eval_set_dir = base_dir
 

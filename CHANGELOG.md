@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.3.291](https://github.com/UKGovernmentBEIS/inspect_ai/compare/0.3.290...0.3.291) (2026-11-16)
+
+
+### Features
+
+* exclude samples of a finished log from its metrics, from Python or inspect log exclude ([#6543](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6543)) ([dcb464f](https://github.com/UKGovernmentBEIS/inspect_ai/commit/dcb464f3b795bf68e530c34fc0ef0f8163b81539))
+* **sentinel:** run sentinels for bridged agents ([#5765](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5765)) ([c7f96da](https://github.com/UKGovernmentBEIS/inspect_ai/commit/c7f96dad0abc668b9bfc8d6c324984d17ea1ca8f))
+
+
+### Bug Fixes
+
+* Anthropic usage undercounted when a request compacts its context ([#6390](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6390)) ([998f93a](https://github.com/UKGovernmentBEIS/inspect_ai/commit/998f93ab4126d760cdbba16af40cde9d24f50dd4))
+* exec_remote start whose command closes stdin before reading its input always fails with "Connection lost" instead of sometimes starting with the input dropped ([#6540](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6540)) ([e5dee1c](https://github.com/UKGovernmentBEIS/inspect_ai/commit/e5dee1ceb5533b4811b481bf667ced15047f7983))
+* OpenAI native compaction crashes when a user message contains an image or file ([#6436](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6436)) ([92fa034](https://github.com/UKGovernmentBEIS/inspect_ai/commit/92fa03413a6228b03388559e0a46499b7d743798))
+* samples_df no longer uses pandas' deprecated drop_duplicates(inplace=True) ([#6383](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6383)) ([a3b8090](https://github.com/UKGovernmentBEIS/inspect_ai/commit/a3b8090965f96f27f51dfdd00bf99d2c42cda5a6))
+* sandbox calls inside a sandbox identity scope default to the scope's working directory ([#6539](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6539)) ([a2e99b2](https://github.com/UKGovernmentBEIS/inspect_ai/commit/a2e99b2a04fe2b99cf278257d9a33a40511dd0e2))
+* tools with an `Enum`, `date` or `Path` parameter default failing every model call ([#6458](https://github.com/UKGovernmentBEIS/inspect_ai/issues/6458)) ([f68c610](https://github.com/UKGovernmentBEIS/inspect_ai/commit/f68c610e99f04829045ab8ebe75b2b8bd71dc042))
+
 ## [0.3.290](https://github.com/UKGovernmentBEIS/inspect_ai/compare/0.3.289...0.3.290) (2026-11-13)
 
 
